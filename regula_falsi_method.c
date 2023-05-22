@@ -12,7 +12,7 @@ int main()
     printf("enter the value of a:\n");
     scanf("%f",&a);
     printf("enter the value of b :\n");
-    scanf("%f",&b);
+    scanf("%f",&b);  //input a=2,b=3; ans = 3.965089 something
 
     if (f(a)*f(b)>0)
     {
@@ -34,7 +34,7 @@ int main()
             h=a-(f(a)*f(b-a)/f(b)-f(a));
             
         } 
-        while (fabs(h-c)>0.001);
+        while (fabs(h-c)>0.0001);
         {
             printf("the value is %f",h);
         }
