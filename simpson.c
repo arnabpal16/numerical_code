@@ -15,18 +15,18 @@ int main()                            //ans-->1.793170
     printf("Enter the number of divisors: \n");
     scanf("%d", &n);
 
-    h = fabs(b - a) / n;
+    h = (b - a) / n;
 
     for (i = 1; i < n ; i++)
     {
-        x = a+i*h;
+        x = a+(i*h);
         if(i%2 == 0)
         {
-            sum = sum+2*f(x);
+            sum = sum+(2*f(x));
         }
         else
         {
-            sum = sum + 4*f(x);
+            sum = sum + (4*f(x));
         }
     }
     integral = (h/3)*((f(a)+f(b)+sum));
