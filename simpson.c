@@ -3,9 +3,9 @@
 
 float f(float x)
 {
-    return (x+(1/x));     //input-->  a=0; b=5; n=10;
+    return (x+(1/x));     //input-->  a=1.2; b=1.6; n=8;
 }
-int main()                            //ans-->1.793170
+int main()                            //ans-->0.8 something
 {
     float a, b, h, sum = 0.0, x, integral;
     int i, n;
