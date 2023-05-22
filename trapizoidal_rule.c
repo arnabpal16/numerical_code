@@ -16,7 +16,7 @@ int main(){
     scanf("%f %f",&a,&b);
     printf("enter the interval n:\n");
     scanf("%d",&n);
-    h=(b-a)/n;
+    h=fabs(b-a)/n;
     for ( i = 0; i <= n; i++)
     {
         x[i]=a+(i*h);
